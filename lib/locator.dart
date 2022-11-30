@@ -10,8 +10,8 @@ GetIt locator = GetIt.instance;
 
 setupLocator() async {
   // 配置项目环境
-  if (kDebugMode) {
-    locator.registerSingleton<Config>(ConfigProduct());
+  if (!kDebugMode) {
+    locator.registerSingleton<Config>(ConfigDebug());
   } else {
     locator.registerSingleton<Config>(ConfigProduct());
   }

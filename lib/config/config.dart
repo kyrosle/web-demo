@@ -1,12 +1,12 @@
 abstract class Config {
   /// 请求url
-  String baseUrl = "https://d6579fc5-c18b-443b-a2ef-01c2b6be51d5.bspapp.com/http/";
+  String get baseUrl => "http://localhost:5590/http/";
 }
 
 /// 开发环境
 class ConfigDebug extends Config {
   @override
-  String get baseUrl => "http://localhost:4500/http/";
+  String get baseUrl => "http://localhost:5590/http/";
 }
 
 /// 预发布环境

@@ -53,13 +53,13 @@ class ArticleCell extends StatelessWidget {
                             );
                           },
                         ),
-                        Text(
-                          article.showDate,
-                          style: TextStyle(
-                            fontSize: 12,
-                            color: context.subTextColor,
-                          ),
-                        ),
+                        // Text(
+                        //   article.showDate,
+                        //   style: TextStyle(
+                        //     fontSize: 12,
+                        //     color: context.subTextColor,
+                        //   ),
+                        // ),
                       ],
                     ),
                   )
